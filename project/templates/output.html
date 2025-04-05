@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #myImage {
+            height: 250px;
+            display : block;
+        }
+
+        .button {
+            padding : 6px 12px;
+            margin : 0.5em 0;
+            background : #009578;
+            color : #ffffff;
+            font-weight : bold; 
+            border : none;
+            outline : none;
+            cursor : pointer ;
+        }
+    </style>
+</head>
+<body>
+    <img id="myImage" src = "{{url_for('static', filename = '/'+ functionname + '/' + filename )}}"  alt="Output" >
+    <a role="button" href="{{url_for('static', filename = '/'+ functionname + '/' + filename )}}"
+        download="Output">
+        <button type = "button" class = "button" >
+            Download 
+        </button>
+    </a>
+</body>

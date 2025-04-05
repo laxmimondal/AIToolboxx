@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action = "http://localhost:5000/upload" method = "POST" 
+        enctype = "multipart/form-data">
+        <h2>Please select your image file :</h2>
+        <br>
+        <input type = "file" name = "file" />
+        <h2>Please select your function to perform:</h2>
+        <input type="radio" id="sharpening" name="func" value="sharpening">
+        <label for="sharpening">Sharpening Tool</label><br>
+        <input type="radio" id="blurring" name="func" value="blurring">
+        <label for="blurring">Blurring Tool</label><br>
+        <input type="radio" id="colorizer" name="func" value="colorizer">
+        <label for="colorizer">Colorizing Tool</label><br>
+        <input type="radio" id="greyscale" name="func" value="greyscale">
+        <label for="greyscale">Greyscale Tool</label><br>
+        <input type="radio" id="neg" name="func" value="neg">
+        <label for="neg">Negitive-Positive Exchanger Tool</label>
+        <br><br><br>
+        <input type = "submit"/>
+    </form>   
+</body>
+</html>
